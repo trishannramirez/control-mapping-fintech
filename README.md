@@ -137,10 +137,10 @@ Framework keys: 'nist\_csf\_2', 'soc2\_tsc', 'glba', 'ffiec', 'iso\_27001\_2022'
 
 
 
-\~\~
-* controlmap.py   CLI and HTML generator
-* controls.csv    the mapping data (one row per CSF subcategory)
-* index.html      generated page (rebuild with the html command)
-* controls.json   generated export
-\~\~
+
+* **controlmap.py**   CLI and HTML generator
+* **controls.csv**    the mapping data (one row per CSF subcategory)
+* **index.html**     generated page (rebuild with the html command)
+* **controls.json**   generated export
+
 
