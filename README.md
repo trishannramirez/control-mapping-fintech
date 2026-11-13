@@ -66,30 +66,30 @@ These sources are not the same kind of thing, so the columns are not interchange
 
 
 Requires Python 3.8+ and no third-party packages.
-
-'''bash
+ 
+```bash
 # Full-text search (any ID, theme, or description text)
 python3 controlmap.py search "segregation"
-
+ 
 # Show one CSF subcategory
 python3 controlmap.py show PR.AA-03
-
+ 
 # Reverse lookup: which CSF subcategories reference a control in another framework?
 python3 controlmap.py lookup glba "314.4(c)(5)"
-python3 controlmap.py lookup iso\_27001\_2022 A.8.13
-python3 controlmap.py lookup soc2\_tsc CC7.2
-
+python3 controlmap.py lookup iso_27001_2022 A.8.13
+python3 controlmap.py lookup soc2_tsc CC7.2
+ 
 # Look up a whole CSF category
-python3 controlmap.py lookup nist\_csf\_2 PR.AA
-
+python3 controlmap.py lookup nist_csf_2 PR.AA
+ 
 # Gap view: which CSF rows have no mapping in a framework?
 python3 controlmap.py coverage
 python3 controlmap.py coverage glba ffiec
-
+ 
 # Generate the searchable web page, or export JSON
 python3 controlmap.py html -o index.html
 python3 controlmap.py export -o controls.json
-'''
+```
 
 Framework keys: 'nist\_csf\_2', 'soc2\_tsc', 'glba', 'ffiec', 'iso\_27001\_2022'.
 
@@ -138,9 +138,9 @@ Framework keys: 'nist\_csf\_2', 'soc2\_tsc', 'glba', 'ffiec', 'iso\_27001\_2022'
 
 
 \~\~
-controlmap.py   CLI and HTML generator
-controls.csv    the mapping data (one row per CSF subcategory)
-index.html      generated page (rebuild with the html command)
-controls.json   generated export
+* controlmap.py   CLI and HTML generator
+* controls.csv    the mapping data (one row per CSF subcategory)
+* index.html      generated page (rebuild with the html command)
+* controls.json   generated export
 \~\~
 
